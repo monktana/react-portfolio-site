@@ -1,4 +1,39 @@
-#root {
+nav {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+nav > .nav-section {
+  padding: 3rem 2rem;
+  display: flex;
+  gap: 1rem;
+  box-sizing: border-box;
+}
+
+#logo-section {
+  justify-content: flex-start;
+}
+
+#logo-section,
+#link-section {
+  flex-basis: calc(100% / 3);
+}
+
+#link-section {
+  gap: 6rem;
+}
+
+#social-section {
+  gap: 3rem;
+}
+
+#social-section,
+#contact-section {
+  flex-grow: 1;
+}
+
+main {
+  flex-grow: 1;
 }
