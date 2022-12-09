@@ -28,6 +28,11 @@ function App() {
           <a href='#'>LETS TALK</a>
         </div>
       </nav>
+      <main>
+        <div className="welcome-section">
+          <h1>BLUBB</h1>
+        </div>
+      </main>
     </div>
   )
 }

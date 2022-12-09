@@ -5,21 +5,30 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --background-color-light: rgb(248, 241, 241);
+  --background-color-dark: rgb(24, 24, 24);
+  --font-color-light: rgb(24, 24, 24);
+  --font-color-dark: rgb(248, 241, 241);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--background-color-light);
+  color: var(--font-color-light);
 
   display: flex;
   flex-direction: column;
+  height: 100vh;
   margin: 0;
   overflow: hidden;
 }
 
 a {
   text-decoration: none;
+  color: var(--font-color-light);
 }
