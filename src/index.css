@@ -1,4 +1,19 @@
-:root {
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  min-height: 100vh;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -10,6 +25,13 @@
   --font-color-light: rgb(24, 24, 24);
   --font-color-dark: rgb(248, 241, 241);
 
+  background-image: url('images/outside.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-color: var(--background-color-light);
+  color: var(--font-color-light);
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -17,18 +39,12 @@
   -webkit-text-size-adjust: 100%;
 }
 
-body {
-  background-color: var(--background-color-light);
-  color: var(--font-color-light);
-
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  overflow: hidden;
-}
-
 a {
   text-decoration: none;
   color: var(--font-color-light);
+}
+
+img, picture, svg, video {
+  display: block;
+  max-width: 100%;
 }
