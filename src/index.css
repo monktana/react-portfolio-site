@@ -48,3 +48,14 @@ img, picture, svg, video {
   display: block;
   max-width: 100%;
 }
+
+button {
+  color: inherit;
+  cursor: pointer;
+  background-color: #35a;
+  border: 1px solid #57c;
+  line-height: normal;
+  padding: 0.4em;
+  transition-duration: 0.2s;
+  user-select: none;
+}
