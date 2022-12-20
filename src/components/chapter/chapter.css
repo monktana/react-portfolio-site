@@ -1,16 +1,18 @@
 .chapter {
-  max-width: 54em;
-  margin: 0 auto;
-
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   line-height: 1.75;
   text-align: left;
+
   -webkit-transition: opacity .4s ease-in;
   -o-transition: opacity .4s ease-in;
   transition: opacity .4s ease-in;
+}
+
+.buttonBack, .buttonForward {
+  margin: auto 5%;
 }
 
 .navButton {
